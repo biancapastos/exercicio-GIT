@@ -12,9 +12,9 @@
 		
 		
 		
-		 <?php
+<?php
 		 session_start();
-		 if (isset($_POST["nome_aluno"])){
+		 if (isset($_POST["nome"])){
                 if (!isset($_SESSION["cont"])) {
 					
                     $_SESSION["cont"] = 0;
@@ -23,18 +23,22 @@
 					
 				$_SESSION["numero1"][$_SESSION["cont"]] = $_POST["numero1"];
                 $_SESSION["numero2"][$_SESSION["cont"]] = $_POST["numero2"];
-                $_SESSION["cont"] ++;		
+                $_SESSION["cont"] ++;	
+
+				foreach($_SESSION["nome"] as $i => $v){
+				
 		?>
 
 		<br  />
 		
 		<select>
 		
-			<option><?= $_SESSION[""][$i];?></option>
+			<option value = '$_SESSION["nome"]'><?= $_SESSION["nome"][$i];?></option>
 		
 		</select>
 		<?php
-		 }
+		}
+				}
 		?>
 	<fieldset class = "form">	
 		<legend>Programa Calculadora : </legend>
