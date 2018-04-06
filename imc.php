@@ -1,14 +1,20 @@
+<?php
+	include("cabecalho.php");
+	
+?>
+
 <!DOCTYPE>
 <html lang = "pt-br">
 	<head>
 		<meta charset = "UTF-8" />
 		<title> IMC </title>
-		<link rel = "stylesheet" href = "estilos.css" />
+		<link rel = "stylesheet" href = "estilo.css" />
 	</head>
 	
 	<body>
 		<form action = "gera_calculo_imc.php" method = "post">
-			<fieldset>
+			<fieldset class = "form">
+			<legend>IMC : </legend>
 				<p>
 					<label> Digite seu Nome: </label> 
 					<input type = "text" name = "nome" />
@@ -24,8 +30,7 @@
 				</p>
 				
 				<p>
-					<input type = "submit" value = "Submeter"/>
-					<input type = "reset" value = "Apagar"/>
+					<input type = "submit" name = "Calcular !" id = "Submit" />
 				</p>
 			</fieldset>
 		</form>

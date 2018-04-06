@@ -1,5 +1,6 @@
 <!-- Nataly, Bianca me ajudou -->
 <?php
+	session_start();
 	$nome = $_POST["nome"];
 	$email = $_POST["mail"];
 	$sexo = $_POST["sexo"];

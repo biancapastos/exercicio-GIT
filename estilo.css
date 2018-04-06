@@ -1,0 +1,14 @@
+table{
+	border: 2px solid black;
+	text-align: center;
+}
+fieldset{
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: center;
+	background-color: #fff;
+	font-family: tahoma;
+	color: #404040;
+	height: 140px;
+}

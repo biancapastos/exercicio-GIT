@@ -1,6 +1,8 @@
 <!-- Bianca -->
 <?php
 	
+	echo "<fieldset class = 'cabecalho'>";
+	
 	echo "<a href = 'index.php'>Home</a>";
 	
 	echo "&nbsp;&nbsp;|&nbsp;&nbsp;";
@@ -14,5 +16,7 @@
 	echo "&nbsp;&nbsp;|&nbsp;&nbsp;";
 	
 	echo "<a href = 'form_cadastro_pessoa.php'>Cadastro</a>";
+	
+	echo "</fieldset>";
 	
 ?>
